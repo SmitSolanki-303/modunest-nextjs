@@ -1,16 +1,118 @@
 @import "tailwindcss";
 
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
 
+  /* Modunest Brand Colors - Enhanced */
+  --color-grey: #B5A58D;
+  --color-brown: #484439;
+  --color-dark: #211F19;
+
+  /* Extended palette for better consistency */
+  --color-grey-light: #D4C8B5;
+  --color-grey-dark: #9A8A76;
+  --color-brown-light: #5C5247;
+  --color-brown-dark: #3A342C;
+  --color-white: #FEFEFE;
+  --color-black: #1A1A1A;
+
+  /* Semantic colors using your palette */
+  --color-primary: var(--color-brown);
+  --color-primary-hover: var(--color-dark);
+  --color-secondary: var(--color-grey);
+  --color-accent: var(--color-grey-light);
+  --color-text-primary: var(--color-dark);
+  --color-text-secondary: var(--color-brown);
+  --color-text-muted: var(--color-grey-dark);
 }
 
-
 body {
-  font-family: var(--font-urbanist), sans-serif;
   margin: 0;
   padding: 0;
+  color: var(--color-text-primary);
+}
 
+.button-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: 1px solid var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+.button-secondary {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: 2px solid var(--color-grey);
+  transition: all 0.3s ease;
+}
+
+.button-secondary:hover {
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  border-color: var(--color-grey);
+}
+
+.dark-bg {
+  background-color: var(--color-dark);
+  color: var(--color-grey);
+}
+
+/* Utility classes for consistent theming */
+.text-brand-primary {
+  color: var(--color-brown);
+}
+
+.text-brand-secondary {
+  color: var(--color-grey);
+}
+
+.text-brand-muted {
+  color: var(--color-grey-dark);
+}
+
+.bg-brand-primary {
+  background-color: var(--color-brown);
+}
+
+.bg-brand-secondary {
+  background-color: var(--color-grey);
+}
+
+.bg-brand-dark {
+  background-color: var(--color-dark);
+}
+
+.border-brand {
+  border-color: var(--color-grey);
+}
+
+/* Custom Tailwind color extensions */
+.text-modunest-brown {
+  color: var(--color-brown);
+}
+
+.text-modunest-grey {
+  color: var(--color-grey);
+}
+
+.text-modunest-dark {
+  color: var(--color-dark);
+}
+
+.bg-modunest-brown {
+  background-color: var(--color-brown);
+}
+
+.bg-modunest-grey {
+  background-color: var(--color-grey);
+}
+
+.bg-modunest-dark {
+  background-color: var(--color-dark);
 }
