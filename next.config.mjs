@@ -1,11 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
-    trailingSlash: true,
-    
-    images: {
-        unoptimized: true,
-    },
+    // Vercel handles Image Optimization and routing perfectly without static export.
 };
 
 export default nextConfig;
