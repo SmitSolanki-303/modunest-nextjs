@@ -25,7 +25,7 @@ const Header = memo(() => {
                                 className="w-auto h-6 sm:h-8 md:h-10"
                                 priority
                                 quality={90}
-                                sizes="(max-width: 640px) 24px, (max-width: 768px) 32px, 40px"
+                                sizes="(max-width: 640px) 120px, (max-width: 768px) 160px, 200px"
                             />
                         </Link>
                     </div>
